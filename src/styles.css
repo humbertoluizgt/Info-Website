@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+  font-family: Inter, sans-serif;
+}
+
+html {
+  background-color: rgb(232, 243, 239);
+}
+
+body {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  height: 80px;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, .25) inset;
+}
+
+.light {
+  background-color: #ffffff;
+}
+
+.nav-dark {
+  background-color: rgb(32, 32, 32);
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  font-size: 1rem;
+  color: #61DAFB;
+  margin-left: 20px;
+}
+
+.logo-icon {
+  width: 35px;  
+}
+
+.navbar h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin-right: 20px;
+}
+
+.main-container {
+  position: relative;  
+  padding: 40px; 
+}
+
+.main-container-light {
+  color: #2B283A;
+  background-color: #ffffff;
+}
+
+.main-container-dark {
+  color: white;
+  background-color: #282D35;
+}
+
+.main-container h1 {
+  font-size: 2.3rem;
+  margin-bottom: 35px;
+  margin-left: -8px;
+}
+
+.list-of-facts {
+  margin-left: 20px;
+  list-style: none; /* Remove default bullets */
+  max-width: 400px;
+  margin-bottom: 100px;
+}
+
+.list-of-facts li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #61DAFB; /* Change the color */
+  font-size: 1.6rem;
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: .8em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.main-container li {  
+  margin: 10px;
+  font-size: 1rem; 
+}
+
+.background-img {  
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  object-position: -70% 0;
+  opacity: .2;
+  z-index: 1;
+}
+
+.toggle-icon {
+  width: 90px;
+  margin-right: 25px;
+  cursor: pointer;
+}
